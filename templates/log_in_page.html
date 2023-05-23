@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_log_in_page.css') }}">
+</head>
+<body>
+<p>Введите логин и пароль</p>
+<form action="login" method="post">
+    <p><input name="login" placeholder="Логин"></p>
+    <p><input name="password" type="password" placeholder="Пароль"></p>
+    <p><input type="submit" value="Вход"></p>
+    
+    <p>{{ error }}</p>
+</form>
+<form action="regi" method="post">
+    <p><input type="submit" value="Регистрация"></p>
+</form>
+</body>
+</html>

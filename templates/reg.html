@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_log_in_page.css') }}">
+</head>
+<body>
+<p>Регистрация</p>
+<form action="registration" method="post">
+    <p><input name="login" placeholder="Логин"></p>
+    <p><input name="password" type="password" placeholder="Пароль нового пользователя"></p>
+    <p><input type="submit" value="Зарегистрироваться"></p>
+</form>
+</body>
+</html>
