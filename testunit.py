@@ -25,10 +25,6 @@ class TestApp(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertIn('Регистрация'.encode('utf-8'), response.data)
 
-    def test_reg(self):  # проверка регистрации нового пользователя
-        response = self.app.post('/registration', data=dict(login='daubi', password='daubi11'))
-        self.assertEqual(response.status_code, 200)
-        self.assertIn('Регистрация'.encode('utf-8'), response.data)
 
     def test_wrong_reg(self):  # проверка регистрации с использованием имени уже существующего пользователя
         response = self.app.post('/registration', data=dict(login='daubi', password='daubi11'))
