@@ -19,6 +19,11 @@ class TestApp(unittest.TestCase):
         response = self.app.post('/login', data=dict(login='admin', password='ad'))
         self.assertEqual(response.status_code, 200)
         self.assertIn('Неправильный пароль'.encode('utf-8'), response.data)
+    
+    def test_goto_reg(self): # проверка на переход к регистрации
+        response = self.app.get('/regi')
+        self.assertEqual(response.status_code, 200)
+        self.assertIn('Регистрация'.encode('utf-8'), response.data)
 
     def test_reg(self):  # проверка регистрации нового пользователя
         response = self.app.post('/registration', data=dict(login='daubi', password='daubi11'))
