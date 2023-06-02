@@ -2,4 +2,5 @@
 Вариант 7
 
 Задание: Создание страницы авторизации, логин пароль в файле. Unittest находится в файле testunit
-![Screenshot_307](https://github.com/svvqt/opdlab3/assets/125040694/5bd9e676-ed90-47a2-b4a3-0b2f498dd107)
+
+![Screenshot_308](https://github.com/svvqt/opdlab3/assets/125040694/01b55452-8ea2-49f5-8979-9bccd9640fda)
